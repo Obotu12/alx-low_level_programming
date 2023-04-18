@@ -1,2 +1,10 @@
 #!/bin/bash
-gcc -E $CFILE -o c
+
+if [ $# -lt 2 ]; then
+  echo "Usage: $0 <input-file> <output-file>"
+  exit 1
+fi
+
+# Run the C file through the preprocessor
+cpp $1 > $2
+

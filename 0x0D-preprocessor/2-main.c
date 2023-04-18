@@ -1,6 +1,10 @@
 #include <stdio.h>
-
-int main(void) {
-    printf("This program was compiled from the file: %s\n", __FILE__);
-    return 0;
+/**
+ * main - entry point
+ * Return: success
+ */
+int main(void)
+{
+	printf("%s\n", __FILE__);
+	return (0);
 }
